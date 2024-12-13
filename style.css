@@ -166,8 +166,11 @@ header{
   margin-top: 32px;
   font-size: 15px;
   line-height: 20px;
-  font-family: "Chivo";
+  font-family: "Archivo";
   color: rgba(146, 141, 211, 1);
+}
+.contact h4{
+  font-family: "Chivo";
 }
 
 .contact a:hover {
