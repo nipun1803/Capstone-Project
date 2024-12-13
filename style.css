@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Chivo:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  font-family: "Chivo", "sans-serif";
+}
+
+body{
+  margin: 0;
+  background-color: #000000;
+  color: white;
+}
+
+.navbar{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  margin: 24px 180px 0 180px;
+  background: rgba(146, 141, 211, 0.1);
+  padding: 0 32px;
+  border-radius: 16px;
+}
+
+.navbar .left{
+  display: flex;
+  gap: 32px;
+}
+
+.navbar a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar .logo{
+  font-family: 'MuseoModerno';
+  text-align:center;
+  font-weight: 500;
+  font-size: 42px;
+  margin: 0;
+}
+
+.navbar .right{
+  display: flex;
+  justify-content: flex-end;
+}
+
+header h1{
+  font-size: 120px;
+  font-family: "Chivo", sans-serif;
+  font-weight: 900;
+  margin: 0;
+  line-height: 120px;
+  text-align: center;
+  margin-bottom: 48px;
+  margin-top: 72px;
+  animation: bounce 1.5s infinite ;
+}
+@keyframes bounce {
+  0%,100%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-20);
+  }
+}
+
+header{
+  padding: 48px 48px;
+}
+.header-image{
+  width: 100%;
+  border-radius: 22px;
+}
+
+#projects{
+  padding: 48px;
+}
+
+#projects .main-content{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+}
+
+#projects .main-content .item h4{
+  font-family: "Archivo", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+  font-weight: 400;
+}
+
+#projects .main-content .item img{
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+#projects .main-content .item p{
+  font-family: "Archivo", sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 17px;
+  line-height: 24px;
+  margin: 0;
+  font-weight: 400;
+}
+
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 48px;
+  text-align: center;
+}
+
+.contact h4 {
+  font-size: 28px;
+  line-height: 32px;
+  font-family: "Syne", "sans-serif";
+  margin: 0px;
+}
+
+
+.contact p {
+  font-size: 15px;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.contact form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact form input {
+  display: inline-block;
+}
+
+.contact button {
+  font-family: "Space Mono", monospace;
+  color: #fff;
+  background-color: rgba(146, 141, 211, 1);
+  width: 100%;
+  border-radius: 8px;
+  padding: 16px 8px;
+  border: none;
+  margin-bottom: 32px;
+  font-size: 15px;
+}
+
+.contact input {
+  font-size: 20px;
+  padding: 8px 16px;
+  border: 1px solid rgba(146, 141, 211, 1);
+  border-radius: 8px;
+  color: rgba(146, 141, 211, 1);
+  width: 56px;
+  height: 64px;
+  text-align: center;
+}
+
+.contact a {
+  margin-top: 32px;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: "Chivo";
+  color: rgba(146, 141, 211, 1);
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  display: flex;
+  padding: 48px;
+  justify-content: space-between;
+  align-items: center;
+  color:rgba(146, 141, 211, 1);
+}
+
+footer p {
+  font-family: "Chivo";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+footer p:hover{
+  color:rgba(146, 141, 211, 1) ;
+}
+
+footer button {
+  font-size: 20px;
+  padding: 12px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  background: none;
+  font-family: "Space Mono", monospace;
+  color: rgba(255, 255, 255, 1);
+}
+
+footer button:hover {
+  background: rgba(146, 141, 211, 1);
+  color: #fff;
+  transition: 0.4s ease;
+}
+
+a:hover{
+  color:  rgba(146, 141, 211, 1);
+}
+.last-container p {
+font-family: "Chivo";
+font-size: 48px;
+font-weight: 400;
+line-height: 52px;
+letter-spacing: -0.01em;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: rgba(255, 255, 255, 1);
+padding:48px;
+padding-right: 50%;
+}
+
+
+@media screen and (max-width: 1024px){
+  .navbar h1{
+    padding-left: 50px;
+  }
+  .navbar .right{
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .navbar{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .left{
+    display: none !important;
+  }
+  .right{
+    display: none !important;
+  }
+  header h1{
+    font-size: 24px;
+    margin-top: 0px;
+  }
+  #projects .main-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .last-container{
+    padding: 0px 30px;
+  }
+  .last-container p{
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .contact{
+    padding: 100px 0px;
+  }
+
+  .contact input{
+    height: 15px;
+    width: 15px;
+  }
+
+  footer p{
+    font-size: 18px;
+  }
+  footer button{
+    font-size: 12px;
+  }
+}
